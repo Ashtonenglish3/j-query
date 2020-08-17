@@ -27,12 +27,18 @@ The purpose of jQuery is to make it much easier to use JavaScript on your websit
 <script src="js/jquery.js"></script>
 <script>
     
-    $("button").click(fn1);
+    $(document).ready(function(){     //JQUERY ONLY WORKS ONCE ENTIRE SITE IS LOADED 
+    
+        $("button").click(fn1);
 
 
- function fn1(){
-    $("#firsth1").fadeToggle();//to add a fade effect 1000=1s;
- }
+function fn1(){
+   $("#firsth1").fadeToggle();//to add a fade effect 1000=1s;
+}
+
+    });
+
+   
  
 
 </script>
