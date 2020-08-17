@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 id="firsth1">jQuery Events</h1>
     <button  id="btn1">Click me</button>
+    <h1 id="firsth1">jQuery Events</h1>
+    
      
 
 
@@ -29,11 +30,15 @@ The purpose of jQuery is to make it much easier to use JavaScript on your websit
     
     $(document).ready(function(){     //JQUERY ONLY WORKS ONCE ENTIRE SITE IS LOADED 
     
-        $("button").dblclick(fn1);
-
+        $("#btn1").mouseenter(fn1);
+        $("#btn1").mouseleave(fn2);
+        $("#btn1").hover(fn1);
 
 function fn1(){
-   $("#firsth1").fadeToggle();//to add a fade effect 1000=1s;
+   $("#firsth1").fadeOut();//to add a fade effect 1000=1s;
+}
+function fn2(){
+   $("#firsth1").fadein();//to add a fade effect 1000=1s;
 }
 
     });
