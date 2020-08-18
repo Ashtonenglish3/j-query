@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Tutorial</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button  id="btn1">button 1</button>
+    <button  id="btn2">button 2</button>
+    <button id="btn3">Animate</button>
+    <div id="firstdive"><h1 id="firsth1">jQuery Animation</h1></div>
+    
+    
+    <div id="cube" class="mycube">
+        <p>Cube</p>
+    </div>
+    <!-- The animate() method performs a custom animation of a set of CSS properties.
+    This method changes an element from one state to another with CSS styles. The CSS property value is changed gradually, to create an animated effect.
+    Only numeric values can be animated (like "margin:30px"). String values cannot be animated (like "background-color:red"), except for the strings "show", "hide" and "toggle". These values allow hiding and showing the animated element. -->
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    
+    $(document).ready(function(){     //JQUERY ONLY WORKS ONCE ENTIRE SITE IS LOADED 
+   
+   $("#btn3").click(function(){
+   
+    $("#cube").animate({
+        left:'150px',
+        opacity:'1',
+        width:'100px',
+        height:'100px',
+    },3000,)
+
+   });
+    });
+
+   
+ 
+
+</script>
+</html>
