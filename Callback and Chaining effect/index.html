@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Tutorial</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+    <!-- <button  id="btn2">button 2</button>
+    <button id="btn3">Animate</button> -->
+    <div id="firstdive"><h1 id="firsth1">Callback and Chaining Effect</h1></div>
+    <button  id="btn1">Toggle</button>
+    
+    <div id="cube" class="mycube">
+        <p>Cube</p>
+    </div>
+    <!-- Callback - 
+    A callback function is executed after the current effect is 100% finished. JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors.
+    To prevent this, you can create a callback function.
+    A callback function is executed after the current effect is finished.
+    Typical syntax: $(selector).hide(speed,callback);
+     
+    Chaining - 
+    With jQuery, you can chain together actions/methods.
+    Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+    Until now we have been writing jQuery statements one at a time (one after the other).
+    However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
+    Tip: This way, browsers do not have to find the same element(s) more than once.
+    To chain an action, you simply append the action to the previous action.
+    Example - 
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000); -->
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    
+    $(document).ready(function(){     //JQUERY ONLY WORKS ONCE ENTIRE SITE IS LOADED 
+   
+   $("#btn3").click(function(){
+   
+    $("#cube").animate({
+        left:'150px',
+        opacity:'1',
+        width:'100px',
+        height:'100px',
+    },3000,)
+
+   });
+    });
+
+   
+ 
+
+</script>
+</html>
