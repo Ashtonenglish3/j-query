@@ -11,10 +11,17 @@
     <!-- <button  id="btn2">button 2</button>
     <button id="btn3">Animate</button> -->
     <h2>Dom manipulation</h2>
-    <button  id="btn1">Action</button>
+    <button  id="btn1">Add Class</button>
+    <button  id="btn2">Remove Class</button>
+    <button  id="btn3">toggle Class</button>
+    <button  id="btn4">Css</button>
+    
     
     <div id="firstdive" class="mydiv">
-        <p id="p1">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
+        <p id="p1" class="p1class" value="">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
+    </div>
+    <div id="div2" class="mydiv">
+        <p id="p2" class="plclass" value="hello world">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
     </div>
 
     <!-- jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
@@ -25,6 +32,11 @@
     html() - Sets or returns the content of selected elements (including HTML markup)
     val() - Sets or returns the value of form fields
     attr() - method is used to get attribute values. -->
+    <!-- Three simple, but useful, jQuery methods for DOM manipulation are:
+addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - Sets or returns the style attribute -->
 </body>
 <script src="js/jquery.js"></script>
 <script>
