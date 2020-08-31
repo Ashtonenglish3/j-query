@@ -15,7 +15,7 @@
     <button  id="btn2">Remove Class</button>
     <button  id="btn3">toggle Class</button>
     <button  id="btn4">Css</button>
-    
+    <br><br>
     
     <div id="firstdive" class="mydiv">
         <p id="p1" class="p1class" value="">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
@@ -24,19 +24,7 @@
         <p id="p2" class="plclass" value="hello world">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
     </div>
 
-    <!-- jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
-    One very important part of jQuery is the possibility to manipulate the DOM.
-    jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate elements and attributes.
-    Three simple, but useful, jQuery methods for DOM manipulation are:
-    text() - Sets or returns the text content of selected elements
-    html() - Sets or returns the content of selected elements (including HTML markup)
-    val() - Sets or returns the value of form fields
-    attr() - method is used to get attribute values. -->
-    <!-- Three simple, but useful, jQuery methods for DOM manipulation are:
-addClass() - Adds one or more classes to the selected elements
-removeClass() - Removes one or more classes from the selected elements
-toggleClass() - Toggles between adding/removing classes from the selected elements
-css() - Sets or returns the style attribute -->
+   
 </body>
 <script src="js/jquery.js"></script>
 <script>
@@ -45,9 +33,9 @@ css() - Sets or returns the style attribute -->
    
    $("#btn1").click(function(){
 
-      alert($('#p1').html());
-    //   alert($('#p1').text()) 
-   })
+     $("#firstdive").addClass("newdivclass");
+
+   });
     });
 
    
@@ -55,3 +43,12 @@ css() - Sets or returns the style attribute -->
 
 </script>
 </html>
+<!-- jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
+One very important part of jQuery is the possibility to manipulate the DOM.
+jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate elements and attributes.
+Three simple, but useful, jQuery methods for DOM manipulation are:
+addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - Sets or returns the style attribute
+Video by - Tanmay Sakpal -->

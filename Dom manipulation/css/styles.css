@@ -8,3 +8,12 @@ div{
 div p{
     color: blue;
 }
+
+.newdivclass{
+    border-radius: 10px;
+    background-color: aqua;
+}
+.newparaclass{
+    font-weight: bold;
+    color: brown;
+}
