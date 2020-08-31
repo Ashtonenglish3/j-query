@@ -19,6 +19,7 @@
     
     <div id="firstdive" class="mydiv">
         <p id="p1" class="p1class" value="">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
+        <img src="img/img1.jpg" alt="">
     </div>
     <div id="div2" class="mydiv">
         <p id="p2" class="plclass" value="hello world">Lorem ipsum dolor sit amet,<b>consectetur</b>  adipisicing elit. Iste earum sequi nulla</p>
@@ -33,22 +34,24 @@
    
    $("#btn1").click(function(){
 
-     $("#firstdive").addClass("newdivclass newparaclass");
+     $("#firstdive").addClass("newdivclass newdiv img");
 
    });
    $("#btn2").click(function(){
 
-$("#firstdive").removeClass("newdivclass newparaclass");
+   $("#firstdive").removeClass("newdivclass newparaclass");
 
-});
-$("#btn3").click(function(){
+   });
+   $("#btn3").click(function(){
 
-$("#firstdive").toggleClass("newdivclass");
+   $("#firstdive").toggleClass("newdivclass");
 
-});
+   });
+   $("#btn4").click(function(){
+    alert($("#firstdive").css("padding"));
+
     });
-
-   
+    });   
  
 
 </script>
