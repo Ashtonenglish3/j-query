@@ -5,9 +5,7 @@ div{
    margin: 10px;
 
 }
-div p{
-    color: blue;
-}
+
 
 .newdivclass{
     border-radius: 10px;
@@ -15,5 +13,5 @@ div p{
 }
 .newparaclass{
     font-weight: bold;
-    color: brown;
+    color: red;
 }

@@ -33,12 +33,17 @@
    
    $("#btn1").click(function(){
 
-     $("#firstdive").addClass("newdivclass");
+     $("#firstdive").addClass("newdivclass newparaclass");
 
    });
    $("#btn2").click(function(){
 
-$("#firstdive").removeClass("newdivclass");
+$("#firstdive").removeClass("newdivclass newparaclass");
+
+});
+$("#btn3").click(function(){
+
+$("#firstdive").toggleClass("newdivclass");
 
 });
     });
