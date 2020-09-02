@@ -11,8 +11,9 @@
     
 </head>
 <body>
-   <div>
+   <div id="mydiv">
        <h1>JqueryUI</h1>
+       <input id="dateinput" placeholder="put the date here" type="text">
    </div>
    
    
@@ -21,10 +22,15 @@
 <script src="jquery-ui/jquery-ui.js"></script>
 <script>
     
-    $(document).ready(function(){     //JQUERY ONLY WORKS ONCE ENTIRE SITE IS LOADED 
-   
-  
-    });   
+   $("#dateinput").datepicker({
+       numberOfMonths:1,
+       changeYear:true,
+       changeMonth:true,
+       showWeek:true,
+       weekHeader:"week no",
+       showOtherMonths:true,
+
+   });
  
 
 </script>
