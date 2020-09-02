@@ -1,0 +1,25 @@
+div{
+
+   border: 2px solid black;
+   padding: 10px;
+   margin: 10px;
+ 
+}
+.mydiv img{
+   width: 20px;
+   height: 20px;
+}
+
+.newdivclass{
+    border-radius: 10px;
+    background-color: aqua;
+    
+}
+.newdiv img{
+    width: 150px;
+    height: 150px;
+}
+.newparaclass{
+    font-weight: bold;
+    color: red;
+}
